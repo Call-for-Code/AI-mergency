@@ -1,4 +1,4 @@
-# AI-mergency, understanding and consolidating requests for help with Watson
+# AI-mergency Control Room (AICR), understanding and consolidating requests for help with Watson
 
 IBMers Alexander Lang and Tim Reiser talk about their Call For Code entry, AI-mergency, harnessing artifical intelligence and natural language processing to quickly process and map call center activity to more successfully deploy rescue operations.
 
