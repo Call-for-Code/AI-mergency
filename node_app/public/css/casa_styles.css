@@ -1,0 +1,336 @@
+:root {
+  --blue-color: rgb(120, 158, 208);
+  --highlight-color: powderblue;
+  --dark-background-color: rgb(70, 70, 70);
+  font-family: "IBM Plex Sans",sans-serif;
+  font-weight: 400;
+  font-size:14px;
+  width: 100%;
+}
+
+.ui-widget {
+  font-family: "IBM Plex Sans"!important;
+}
+
+body {
+  margin: 0px 0px 8px 0px;
+}
+
+#map {
+  width: 800px;
+  height: 800px;
+}
+
+.headerBar {
+  background-color: var(--dark-background-color);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0px 0px 10px;
+  width: 100%;
+}
+
+.headerBar img {
+  width: 40px;
+  vertical-align: bottom;
+}
+
+.headerBar span.right {
+  float: right;
+  margin: 10px 20px;
+}
+
+.headerBar span.left {
+  padding-left: 10px;
+}
+
+#logoPlaceholder {
+  padding: 3px 5px;
+  margin-right: 10px;
+  color: white;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.navbar {
+  padding: 10px 40px 25px;
+  margin-bottom: 3px;
+  /* border-bottom: 2px solid var(--dark-background-color); */
+  box-shadow: -1px 2px 1px 0px var(--dark-background-color);
+}
+
+.navtab {
+  font-weight: bold;
+  padding: 10px 15px 15px 15px;
+}
+
+.navtab:hover {
+  color: var(--blue-color);
+  transition: color .1s;
+}
+
+.navtab.active {
+  color:  var(--blue-color);
+}
+
+.navtab span {
+  padding-bottom: 10px;
+}
+
+.navtab.active span {
+  border-bottom: 2px solid;
+}
+
+.contentContainer {
+  position:fixed;
+}
+
+.ui-button {
+  background-color: #3d70b2!important;
+  border: 1px solid #3d70b2!important;
+}
+
+.call {
+  height: 25pt;
+  width: 90%;
+}
+
+.chat {
+  width: 100%;
+}
+
+button:hover:enabled {
+  color: var(--blue-color);
+  transition: color 0.1s;
+}
+
+.notImplemented > button:hover:enabled {
+  cursor: not-allowed;
+}
+
+button:disabled {
+  opacity: .5;
+}
+
+.entity {
+  color: black;
+  background-color: white;
+  white-space: pre-wrap;
+  border-radius: 10px;
+  padding: 2px 4px;
+}
+
+.entity > img {
+  display: inline!important;
+  vertical-align: bottom;
+  float: none;
+}
+
+.transcriptContainer {
+  width: 500px;
+  height: 800px;
+  background-color: var(--dark-background-color)!important;
+  margin-right: 5px;
+}
+
+.transcript {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 20px 20px 20px;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeLine {
+  list-style: none;
+  width: 400px; 
+  text-align: center; 
+  border-bottom: 1px solid white; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+}
+
+.timeLine span {
+  color: white;
+  background-color: var(--dark-background-color); 
+  padding:0 10px; 
+}
+
+.transcriptItem {
+  color: white;
+  background-color: var(--blue-color);
+  padding: 5px 13px;
+  line-height: 180%;
+  border-radius: 4px;
+  list-style: none;
+  margin: 10px 0;
+  max-width: 320px;
+  align-self: flex-start;
+}
+
+.transcriptItem.incomplete {
+  opacity: .5;
+}
+
+.transcriptItem.right {
+  background-color: rgba(89,88,89);
+  align-self: flex-end;
+}
+
+.callbar {
+  width: 240px;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.callbar button {
+  font: unset;
+  margin: 0pt;
+  border: unset;
+  border-top: 1px solid lightgray;
+}
+
+.callbar > .notImplemented > button:last-of-type {
+  border-bottom: 1px solid lightgray;
+}
+
+.callbar button > span {
+  white-space: pre;
+}
+
+.callElement img {
+  width: 1.5em;
+  display: inline!important;
+  vertical-align: bottom;
+}
+
+.callElement span.rightIcon {
+  vertical-align: bottom;
+}
+
+.rightIcon {
+  float: right;
+}
+
+.callElement {
+  font-weight: lighter;
+  width: 100%;
+  color: black;
+  background-color: white;
+  padding: 15px 0px;
+  list-style: none;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.callStatus {
+  margin: 5px 0px 0px 25px;
+}
+
+.callStatus.active {
+  padding-top: 15px;
+  opacity: .5;
+}
+
+.callStatus.waiting {
+  padding-top: 12px;
+  padding-left: 0px;
+  margin-left: 2px;
+  font-size: 85%;
+  color: #777677;
+  opacity: 0.7;
+}
+
+.ui-accordion .ui-accordion-header {
+  margin-top: 0px;
+}
+
+.incidentsOuter {
+  width: 380px;
+  height: 800px;
+}
+.incidentsContainer {
+  padding: 0px 20px 20px 20px;
+}
+
+/* Remove the header from the incidents */
+.incidentsContainer .ui-datatable-thead .ui-unselectable-text {
+  padding: unset;
+}
+
+.ui-widget-content {
+  border: unset;
+  border-radius: unset;
+}
+
+.mergeSelectionBottom {
+  top: -1px;
+  border-left: 2px solid #007ad9;
+  border-bottom: 2px solid #007ad9;
+  border-right: 2px solid #007ad9;
+}
+.mergeSelectionMiddle {
+  top: -1px;
+  border-left: 2px solid #007ad9!important;
+  border-right: 2px solid #007ad9!important;
+}
+.mergeSelectionTop {
+  bottom: -1px;
+  border-left: 2px solid #007ad9!important;
+  border-top: 2px solid #007ad9!important;
+  border-right: 2px solid #007ad9!important;
+}
+
+.mergeButtons {
+  position: absolute;
+  top: -80px;
+  left: 53%;
+  white-space: nowrap;
+}
+
+.callList {
+  list-style-type: none;
+  margin-left: 13px;
+  padding-left: 10px;
+  border-left: 6px solid lightgrey;
+  display: inline-block;
+  line-height: 150%;
+  font-size: 85%;
+}
+
+.callListDate {
+  font-size: small;
+  color: #777677;
+}
+
+.incidentTitleAddress {
+  font-size: small;
+  color: #777677;
+}
+
+.transcriptLink {
+  color: blue!important;
+  text-decoration: none;
+}
+
+.bottomBar {
+  margin-top: 850px;
+  margin-left: 50px;
+}
+
+.resetButtonContainer {
+  margin-top: 20px;
+}
+
+.demoButton {
+  font-size: initial;
+  font-size: 16px!important;
+  font-weight: 600!important;
+  border: 2px solid black!important;
+}

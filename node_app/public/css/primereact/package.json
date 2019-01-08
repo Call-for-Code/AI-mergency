@@ -1,0 +1,122 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primereact",
+        "scope": null,
+        "escapedName": "primereact",
+        "name": "primereact",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/tgoetz/code/casa/casa-nl-disaster/node_app"
+    ]
+  ],
+  "_from": "primereact@latest",
+  "_id": "primereact@2.0.0-beta.1",
+  "_inCache": true,
+  "_location": "/primereact",
+  "_nodeVersion": "8.9.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/primereact_2.0.0-beta.1_1532000573896_0.14897777680246693"
+  },
+  "_npmUser": {
+    "name": "cagatay.civici",
+    "email": "cagatay.civici@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primereact",
+    "scope": null,
+    "escapedName": "primereact",
+    "name": "primereact",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/hyc-ba-npm-virtual/primereact/-/primereact-2.0.0-beta.1.tgz",
+  "_shasum": "bc08083b98627da65f85a188219bc625bfb1198b",
+  "_shrinkwrap": null,
+  "_spec": "primereact",
+  "_where": "/Users/tgoetz/code/casa/casa-nl-disaster/node_app",
+  "bugs": {
+    "url": "https://github.com/primefaces/primereact/issues"
+  },
+  "dependencies": {},
+  "description": "[![Join the chat at https://gitter.im/primefaces/primereact](https://badges.gitter.im/primefaces/primereact.svg)](https://gitter.im/primefaces/primereact?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)",
+  "devDependencies": {
+    "axios": "^0.15.3",
+    "babel-cli": "^6.24.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "chart.js": "2.7.1",
+    "classnames": "^2.2.5",
+    "del": "^2.2.0",
+    "font-awesome": "^4.7.0",
+    "fullcalendar": "4.0.0-alpha",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.6",
+    "moment": "^2.17.1",
+    "nanoscroller": "^0.8.7",
+    "node-sass-chokidar": "^1.3.0",
+    "npm-run-all": "^4.1.3",
+    "primeicons": "1.0.0-beta.10",
+    "prismjs": "1.6.0",
+    "prop-types": "^15.5.0",
+    "quill": "1.3.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.11",
+    "react-transition-group": "^2.2.1"
+  },
+  "directories": {},
+  "dist": {
+    "tarball": "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/hyc-ba-npm-virtual/primereact/-/primereact-2.0.0-beta.1.tgz",
+    "shasum": "bc08083b98627da65f85a188219bc625bfb1198b"
+  },
+  "gitHead": "c57d061aa26299c3efe9b798f4352c94b1b004e1",
+  "homepage": "https://www.primefaces.org/primereact",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "cagatay.civici",
+      "email": "cagatay.civici@gmail.com"
+    }
+  ],
+  "name": "primereact",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primefaces/primereact.git"
+  },
+  "scripts": {
+    "build": "npm-run-all build-css gulp-build build-js",
+    "build-css": "node-sass-chokidar src/sass/ -o src/sass/ | node-sass-chokidar public/resources/themes/ -o public/resources/themes/",
+    "build-exports": "gulp build-exports",
+    "build-js": "react-scripts build",
+    "build-resources": "gulp prepublish",
+    "compile-components": "babel src/components --out-dir components --presets es2015,react,stage-0 --copy-files",
+    "eject": "react-scripts eject",
+    "gulp-build": "gulp build",
+    "start": "npm-run-all -p watch-css gulp-build start-js ",
+    "start-js": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "watch-css": "npm run build-css && node-sass-chokidar src/sass/ -o src/sass/ --watch --recursive | node-sass-chokidar public/resources/themes/ -o public/resources/themes/ --watch --recursive"
+  },
+  "version": "2.0.0-beta.1"
+}

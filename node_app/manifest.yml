@@ -1,0 +1,5 @@
+---
+applications:
+- name: aimergency-control-room
+  path: .
+  memory: 512M

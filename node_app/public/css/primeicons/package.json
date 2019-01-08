@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primeicons",
+        "scope": null,
+        "escapedName": "primeicons",
+        "name": "primeicons",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/tgoetz/code/casa/casa-nl-disaster/node_app"
+    ]
+  ],
+  "_from": "primeicons@latest",
+  "_id": "primeicons@1.0.0-beta.10",
+  "_inCache": true,
+  "_location": "/primeicons",
+  "_nodeVersion": "8.9.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/primeicons_1.0.0-beta.10_1531984555218_0.08093723326717961"
+  },
+  "_npmUser": {
+    "name": "cagatay.civici",
+    "email": "cagatay.civici@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "primeicons",
+    "scope": null,
+    "escapedName": "primeicons",
+    "name": "primeicons",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/hyc-ba-npm-virtual/primeicons/-/primeicons-1.0.0-beta.10.tgz",
+  "_shasum": "b1a27a8a279c0b28d4bd537a29709b39cfebbd9f",
+  "_shrinkwrap": null,
+  "_spec": "primeicons",
+  "_where": "/Users/tgoetz/code/casa/casa-nl-disaster/node_app",
+  "author": {
+    "name": "PrimeTek"
+  },
+  "bugs": {
+    "url": "https://github.com/primefaces/primeicons/issues"
+  },
+  "dependencies": {},
+  "description": "Font Icon Library for Prime UI Libraries",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "tarball": "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/hyc-ba-npm-virtual/primeicons/-/primeicons-1.0.0-beta.10.tgz",
+    "shasum": "b1a27a8a279c0b28d4bd537a29709b39cfebbd9f"
+  },
+  "gitHead": "2093f653b391a0203b871d7e46fb086d9b23381d",
+  "homepage": "https://github.com/primefaces/primeicons#readme",
+  "keywords": [
+    "Icon"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "cagatay.civici",
+      "email": "cagatay.civici@gmail.com"
+    }
+  ],
+  "name": "primeicons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primefaces/primeicons.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0-beta.10"
+}

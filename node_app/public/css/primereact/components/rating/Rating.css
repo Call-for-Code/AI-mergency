@@ -1,0 +1,12 @@
+.ui-rating a {
+    cursor: pointer;
+}
+
+.ui-rating {
+    font-size: 1.25em;
+}
+
+.ui-rating.ui-state-disabled a,
+.ui-rating.ui-rating-readonly a {
+    cursor: default;
+}
