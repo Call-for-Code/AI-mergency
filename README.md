@@ -120,20 +120,20 @@ the button *and also reload the page*. When you reload the page, the buttons
 for accepting the recorded phone calls will reappear.
 
 1. Go to https://aimergency-control-room.mybluemix.net/
-2. Under 'Incoming Calls', click on the first call (number `239-698-1283`)
+2. Under `Incoming Calls`, click on the first call (number `239-698-1283`)
 3. Listen to the call, and observe how transcript and incident info get created. 
-4. Observe that a new marker is added to the map. To see the map completely, click the `Map`tab at the top of the screen.
+4. Observe that a new marker is added to the map. To see the map completely, click the `Map` tab at the top of the screen.
 6. Once the call has ended, it is removed from the call list.
-7. Under 'Incoming Calls', click on the next call, which is now the first
+7. Under `Incoming Calls`, click on the next call, which is now the first
    in the list of incoming calls (number `060-044-0994`)
 8. Once the caller address is recognized, you can elect to merge this call with the previous one or you can keep it
-   separate by clicking 'Cancel'.
+   separate by clicking `Cancel`.
 9. Press the `Reset Demo Database` button at the bottom of the screen.
 
 ### Running the AI-mergency control room locally
 
 1. Clone the repository.
-2. Follow the instructions below to to create your own instances of the required services.
+2. Follow the instructions below to create your own instances of the required services.
 3. Ensure that you have `npm` installed
    and that you are using `node` in version 8.
 4. Navigate to the repository's `node_app` directory and run `npm install`.
@@ -147,18 +147,18 @@ for accepting the recorded phone calls will reappear.
 **Db2 / Watson Natural Language Understanding / Cognos Dashboard Embedded**
 
 1. Go to https://www.ibm.com/cloud/ and sign-in or create a new cloud account.
-2. Click 'Create resource' to create instances of the following services:
+2. Click `Create resource` to create instances of the following services:
     1. Db2 Lite
     2. IBM Cognos Dashboard Embedded
     3. Natural Language Understanding
-3. For each service instance, go to 'Service credentials' and click 'New credential' to get your service credentials. Enter the required credentials in the corresponding configuration file:
+3. For each service instance, go to `Service credentials` and click `New credential` to get your service credentials. Enter the required credentials in the corresponding configuration file:
     1. `node_app/db-credentials.json`
     2. `node_app/daas-credentials.json`
     3. `node_app/nlu-credentials.json`
     
 **Mapbox Geocoding**
 
-Go to https://www.mapbox.com/ and sign-up to get an access token. Enter your access token in the Mapbox configuration file`node_app/pulic/scripts/mapbox-credentials.json`.
+Go to https://www.mapbox.com/ and sign-up to get an access token. Enter your access token in the Mapbox configuration file `node_app/pulic/scripts/mapbox-credentials.json`.
 
 **Google Speech**
 
