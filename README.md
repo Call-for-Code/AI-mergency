@@ -152,7 +152,7 @@ for accepting the recorded phone calls will reappear.
     2. IBM Cognos Dashboard Embedded
     3. Natural Language Understanding
 3. For each service instance, go to 'Service credentials' and click 'New credential' to get your service credentials. Enter the required credentials in the corresponding configuration file:
-    1. `node_app/db-credentials.json`
+    1. `node_app/db-credentials.json`: Enter `ssldsn` from your json creds as `connectionString`
     2. `node_app/daas-credentials.json`
     3. `node_app/nlu-credentials.json`
     
