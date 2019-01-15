@@ -157,6 +157,7 @@ for accepting the recorded phone calls will reappear.
     2. `node_app/daas-credentials.json`
         `username` = `client_id`
         `password` = `client_secret
+        `url`= `api_endpoint_url`
     3. `node_app/nlu-credentials.json`
     
 **Mapbox Geocoding**
