@@ -164,7 +164,8 @@ for accepting the recorded phone calls will reappear.
         `username` = `client_id`
         `password` = `client_secret
         `url`= `api_endpoint_url`
-    3. `node_app/nlu-credentials.json`
+    3. `node_app/nlu-credentials.json`: 
+        You have to add `version`. Something like: `"2018-11-16"` is expected. It is easiest to copy and execute the sample API call from you service's start page. 
     
 **Mapbox Geocoding**
 
