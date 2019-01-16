@@ -17,14 +17,13 @@ const parameters = {
       emotion: false,
       sentiment: false,
       mentions: true, // should return offsets, doesn't work anyway
-      //model: '20:4e8cb1a6-5779-4909-8053-19f900719bbc',
+      model: '20:4e8cb1a6-5779-4909-8053-19f900719bbc',
     },
   },
 };
 
 exports.analyze = (text, callback) => {
   parameters.text = text;
-  console.log("Nlu is called")
   return nlu.analyze(parameters, callback);
 };
 
