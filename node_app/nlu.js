@@ -2,7 +2,11 @@ const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-l
 
 const config = require('./nlu-credentials.json');
 
-const nlu = new NaturalLanguageUnderstandingV1(config);
+const nlu = new NaturalLanguageUnderstandingV1({
+  version: config.version,
+  iam_apikey: config.apikey,
+  url: config.url
+});
 
 const parameters = {
   text: '',
@@ -13,13 +17,14 @@ const parameters = {
       emotion: false,
       sentiment: false,
       mentions: true, // should return offsets, doesn't work anyway
-      model: '20:4e8cb1a6-5779-4909-8053-19f900719bbc',
+      //model: '20:4e8cb1a6-5779-4909-8053-19f900719bbc',
     },
   },
 };
 
 exports.analyze = (text, callback) => {
   parameters.text = text;
+  console.log("Nlu is called")
   return nlu.analyze(parameters, callback);
 };
 
