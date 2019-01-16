@@ -141,6 +141,12 @@ for accepting the recorded phone calls will reappear.
 5. Start the app with `npm start`.
 6. Use your browser to navigate to `localhost:3000` and try the app.
    Don't forget to enable sound!
+7. The database tables have to be created initally. To do that:
+   - locate the file setupDb.js
+   - in the exports.reset method, uncomment the dropTable calls
+   - restart your app
+   - click the button "Reset Demo Database" below the call panel
+   - reactivate the dropTable calls
 
 #### Creating the required service instances
 
@@ -167,3 +173,4 @@ Go to https://www.mapbox.com/ and sign-up to get an access token. Enter your acc
 **Google Speech**
 
 Go to https://cloud.google.com/speech-to-text and follow the Quickstart guide to get your credentials for Google Cloud Speech-to-Text. Enter your credentials in the Google Speech configuration file `node_app/google-speech-credentials.json`.
+You need to enable Data Logging for the Google Speech API!
