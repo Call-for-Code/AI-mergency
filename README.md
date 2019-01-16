@@ -148,6 +148,12 @@ for accepting the recorded phone calls will reappear.
    - click the button "Reset Demo Database" below the call panel
    - reactivate the dropTable calls
 
+
+**Known Limitations**
+
+- The Map is removed right now, because we have not yet found a good way to share its definition.
+- Natural Language understanding used a customized model. We have yet to figure out how to share it. Hence NLU is perfoming less great than in our demo.
+
 #### Creating the required service instances
 
 **Db2 / Watson Natural Language Understanding / Cognos Dashboard Embedded**
@@ -175,3 +181,8 @@ Go to https://www.mapbox.com/ and sign-up to get an access token. Enter your acc
 
 Go to https://cloud.google.com/speech-to-text and follow the Quickstart guide to get your credentials for Google Cloud Speech-to-Text. Enter your credentials in the Google Speech configuration file `node_app/google-speech-credentials.json`.
 You need to enable Data Logging for the Google Speech API!
+
+**Keeping Secrets**
+
+Please do not commit any files that contain secrets. This includes API-Keys, Tokens etc.. All the JSON files that are named `{someService}-credentials.json` in this repo are merely templates. Do not check in your versions!
+
