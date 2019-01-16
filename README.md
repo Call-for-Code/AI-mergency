@@ -141,6 +141,12 @@ for accepting the recorded phone calls will reappear.
 5. Start the app with `npm start`.
 6. Use your browser to navigate to `localhost:3000` and try the app.
    Don't forget to enable sound!
+7. The database tables have to be created initally. To do that:
+   - locate the file setupDb.js
+   - in the exports.reset method, uncomment the dropTable calls
+   - restart your app
+   - click the button "Reset Demo Database" below the call panel
+   - reactivate the dropTable calls
 
 #### Creating the required service instances
 
