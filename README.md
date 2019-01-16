@@ -83,7 +83,7 @@ information via Cognos (see information about the embedded Cognos dashboard belo
 #### Information Extraction from Transcripts: Watson Natural Language Understanding and Watson Knowledge Studio
 
 We built a custom model in Watson Knowledge Studio that extracts entities
-relevant to the domain of natural disasters.  Mentions of persons, addresses,
+relevant to the domain of natural disasters. Mentions of persons, addresses,
 and incident details are extracted using dictionaries, regular expressions and
 rules, which can be found [here](https://github.com/IBM/AI-mergency/tree/master/Knowledge%20Studio). The model is deployed to the Watson Natural Language Understanding
 service and accessed via its Javascript API.
@@ -120,14 +120,14 @@ the button *and also reload the page*. When you reload the page, the buttons
 for accepting the recorded phone calls will reappear.
 
 1. Go to https://aimergency-control-room.mybluemix.net/
-2. Under 'Incoming Calls', click on the first call (number `239-698-1283`)
+2. Under `Incoming Calls`, click on the first call (number `239-698-1283`)
 3. Listen to the call, and observe how transcript and incident info get created. 
-4. Observe that a new marker is added to the map. To see the map completely, click the `Map`tab at the top of the screen.
+4. Observe that a new marker is added to the map. To see the map completely, click the `Map` tab at the top of the screen.
 6. Once the call has ended, it is removed from the call list.
-7. Under 'Incoming Calls', click on the next call, which is now the first
+7. Under `Incoming Calls`, click on the next call, which is now the first
    in the list of incoming calls (number `060-044-0994`)
 8. Once the caller address is recognized, you can elect to merge this call with the previous one or you can keep it
-   separate by clicking 'Cancel'.
+   separate by clicking `Cancel`.
 9. Press the `Reset Demo Database` button at the bottom of the screen.
 
 ### Running the AI-mergency control room locally
@@ -142,10 +142,10 @@ for accepting the recorded phone calls will reappear.
 6. Use your browser to navigate to `localhost:3000` and try the app.
    Don't forget to enable sound!
 7. The database tables have to be created initally. To do that:
-   - locate the file setupDb.js
-   - in the exports.reset method, uncomment the dropTable calls
+   - locate the file `setupDb.js`
+   - in the `exports.reset` method, uncomment the dropTable calls
    - restart your app
-   - click the button "Reset Demo Database" below the call panel
+   - click the button `Reset Demo Database` below the call panel
    - reactivate the dropTable calls
 
 #### Creating the required service instances
@@ -153,11 +153,11 @@ for accepting the recorded phone calls will reappear.
 **Db2 / Watson Natural Language Understanding / Cognos Dashboard Embedded**
 
 1. Go to https://www.ibm.com/cloud/ and sign-in or create a new cloud account.
-2. Click 'Create resource' to create instances of the following services:
+2. Click `Create resource` to create instances of the following services:
     1. Db2 Lite
     2. IBM Cognos Dashboard Embedded
     3. Natural Language Understanding
-3. For each service instance, go to 'Service credentials' and click 'New credential' to get your service credentials. Enter the required credentials in the corresponding configuration file:
+3. For each service instance, go to `Service credentials` and click `New credential` to get your service credentials. Enter the required credentials in the corresponding configuration file:
     1. `node_app/db-credentials.json`: 
         `connectionString` = `ssldsn` from json creds 
     2. `node_app/daas-credentials.json`
