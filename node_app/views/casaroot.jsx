@@ -177,7 +177,7 @@ class CasaRoot extends Component {
   geocodeIncident(incident, callback = Function.prototype) {
     const { updateCurrentIncident } = this.props;
     return geocoding(
-      `${incident.ADDRESS_STREET} ${incident.ADDRESS_STREET_NB}`,
+      `${incident.ADDRESS_STREET_NB} ${incident.ADDRESS_STREET}`,
       this.pos,
       (r) => {
         const inc = { ...incident, ...geoCodeToIncident(r) };
