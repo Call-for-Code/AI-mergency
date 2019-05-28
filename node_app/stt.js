@@ -43,6 +43,8 @@ module.exports = {
     // Imports the Google Cloud client library
     const speech = require('@google-cloud/speech').v1p1beta1;
 
+    console.log("stream recognize is called")
+
     // Creates a client
     const client = new speech.SpeechClient({ keyFilename: 'google-speech-credentials.json' });
 

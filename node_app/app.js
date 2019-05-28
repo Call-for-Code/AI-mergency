@@ -33,7 +33,7 @@ app.get('/map', (req, res) => {
   const buffer = Buffer.from(`${user}:${pwd}`).toString('base64');
   const auth = `Basic ${buffer}`; request.post({
     headers: { 'content-type': 'application/json', Authorization: auth },
-    url: daas.url,
+    url: 'https://dde-us-south.analytics.ibm.com/daas/v1/session',
     //this string concatenation looks but, but that's how it worked..
     body: '{ "expiresIn": 3600, "webDomain": "' + uri +'"}', 
   }, (error, response, body) => {

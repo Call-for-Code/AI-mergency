@@ -13,6 +13,7 @@ let newIncidentRecordStmt;
 // init connection
 try {
   conn = ibmdb.openSync(config.connectionString);
+  console.log("is database connected " + conn.connected)
   insertIncidentRecordStmt = conn.prepareSync(
     `insert into ${incidentTable} `
       + '(STATUS, ADDRESS_CITY, ADDRESS_STREET, ADDRESS_STREET_NB, ADDRESS_APARTMENT, ADDRESS_DETAILS, '
@@ -87,6 +88,7 @@ exports.getCall = (callId) => {
 
 // create new incident with status 'Open' and retrieve it to get the Id
 exports.createIncident = () => {
+  console.log("Create incidents table is called!");
   const sqlStmt = 'select * from final table ('
     + `insert into ${incidentTable} (status) values ('Open')`
     + ')';

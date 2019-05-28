@@ -1,6 +1,7 @@
 // get/initialize database
 const dbClient = require('./db');
 
+
 // Reset the demo DB to the state of before the first call came in.
 exports.reset = () => {
   // drop existing tables
