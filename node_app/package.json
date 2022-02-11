@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@google-cloud/speech": "^2.0.0",
-    "ajv": "^5.5.2",
+    "ajv": "^6.12.3",
     "babel-eslint": "^8.2.6",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
