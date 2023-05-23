@@ -46,7 +46,7 @@
     "express-react-views": "^0.10.5",
     "express-secure-only": "^0.2.1",
     "fetch": "^1.1.0",
-    "helmet": "^3.12.1",
+    "helmet": "^3.23.3",
     "howler": "^2.0.14",
     "http": "0.0.0",
     "ibm_db": "^2.6.0",
